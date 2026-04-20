@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form2</title>
+</head>
+<body>
+
+<h2>Bước 2: Thông tin gian hàng</h2>
+
+<form th:action="@{/form/form2}" method="post" th:object="${form}">
+    <input type="text" th:field="*{shopName}" placeholder="Tên shop"><br>
+    <input type="text" th:field="*{address}" placeholder="Địa chỉ"><br>
+    <button type="submit">Tiếp</button>
+</form>
+</body>
+</html>
